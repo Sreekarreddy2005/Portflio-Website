@@ -1,0 +1,487 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #140427;
+  color: #fff; /* Set text color to white for visibility */
+}
+
+header, footer {
+  background: #140427; /* Remove background color */
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+header h4{
+  font-family: "Inter", serif; 
+  font-size: 2.5em; 
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  
+}
+nav {
+  position: relative;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.nav-links { display: flex; 
+  justify-content: center; /* Center the links */ 
+  list-style: none; 
+  padding: 0;
+  margin: 0; 
+  font-family: "Quicksand", serif; 
+  font-weight: bold; 
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+.nav-links li {
+  margin: 0 1em;
+}
+
+.nav-links a { 
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em; /* Add padding to create a button effect */ 
+  border: 1px solid #25103b; /* Add border to create a box effect */ 
+  border-radius: 40px; /* Add border radius for rounded corners */ 
+  background-color: transparent; /* Transparent background */ 
+  transition: background-color 0.3s,color 0.3s; /* Transition effects */ 
+}
+.nav-links a:hover{
+background-color: #402667;
+
+}
+section {
+  padding: 2em;
+  margin: 1em 0;
+}
+
+h2 {
+  font-family: "Quicksand", serif;
+  font-weight: bold;
+  border-bottom: 2px solid white; /* Update border color to white */
+  padding-bottom: 0.5em;
+  font-size: 2.5em;
+  text-align: center;
+  cursor: pointer;
+  transition: text-shadow 0.3s ease-in-out;
+}
+h2:hover{
+  color: #c0b9cd;
+}
+h7 {
+  font-family: "Quicksand", serif;
+  font-weight: bold;
+  border-bottom: 2px solid white; /* Update border color to white */
+  padding-bottom: 0.5em;
+  font-size: 2.5em;
+  text-align: center;
+  cursor: pointer;
+  transition: text-shadow 0.3s ease-in-out;
+}
+h7:hover{
+  text-shadow: 0 0 10px #0b2f92, 0 0 20px #0b2f92, 0 0 30px #0b2f92;
+}
+h2:hover {
+  text-shadow: 0 0 10px #0b2f92, 0 0 20px #0b2f92, 0 0 30px #0b2f92;
+}
+
+h3 {
+  font-family: "PlayFair Display";
+  font-weight: lighter;
+  font-size: 2.3em;
+  color: #6304f2;
+  margin-left:2cm;
+}
+
+h4 { 
+  font-family: "Kanit", sans-serif;
+  font-size: 3.9em;
+  font-weight: 700;
+  color: #b6025c;
+}
+
+.about-description {
+  font-family: 'Inter', sans-serif; 
+  font-size: 1.5rem; 
+  line-height: 1.6; 
+}
+
+h5 {
+  font-family: "Quicksand", serif;
+  font-weight: bold;
+  border-bottom: 2px solid aquamarine;
+  padding-bottom: 0.5em;
+  font-size: 2.5em;
+  color: aquamarine;
+}
+
+.other-description1 {
+  font-family: "Quicksand", serif;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.highlight {
+  color: #ec4899;
+  font-weight: bolder;
+  font-size: 1.3em;
+}
+
+.experience-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.education-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.experience-image {
+  flex: 1;
+  padding: 20px;
+}
+.eduaction-image {
+  flex: 1;
+  padding: 20px;
+}
+
+.experience-image img {
+  width: 400px;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.education-image img {
+  width: 500px;
+  height: 500px;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.experience-boxes {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  padding: 30px;
+  margin-left: 5%;
+}
+
+.education-boxes {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+  margin-left: 10%;
+}
+
+.experience-box {
+  background-color: #241438;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 150px; /* Ensure the box is big enough */
+  width: 500px;
+  cursor: pointer;
+  overflow: hidden; /* Hide overflow text */
+}
+.education-box {
+  background-color: #150528;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 150px; /* Ensure the box is big enough */
+  width: 500px;
+  cursor: pointer;
+  overflow: hidden; /* Hide overflow text */
+}
+
+.experience-box:hover {
+  box-shadow: 0 0 20px 5px #3263de; /* Add glow effect on hover */
+}
+.education-box:hover {
+  box-shadow: 0 0 20px 5px #4673e4; /* Add glow effect on hover */
+}
+
+.experience-duration {
+  text-align: center;
+  font-size: 1.2rem;
+  color: greenyellow;
+  margin-bottom: 10px;
+}
+.eduaction-duration {
+  text-align: center;
+  font-size: 1.2rem;
+  color: greenyellow;
+  margin-bottom: 10px;
+}
+.experience-details {
+  text-align: left;
+}
+.education-details {
+  text-align: left;
+}
+
+.experience-box h3 {
+  margin: 0;
+  padding: 5px 0;
+  font-size: 1.8rem;
+}
+.education-box h3 {
+  margin: 0;
+  padding: 5px 0;
+  font-size: 1.8rem;
+}
+.experience-company {
+  font-family: "Inter", sans-serif;
+  margin: 5px 0;
+  font-size: 1.2rem;
+  color: #a072ee;
+  margin-bottom: 0.2cm;
+}
+.education-company {
+  font-family: "Inter", sans-serif;
+  margin: 5px 0;
+  font-size: 1.2rem;
+  color: #a072ee;
+  margin-bottom: 0.2cm;
+}
+
+.experience-description {
+  margin: 5px 0;
+  color: #ccc;
+}
+.education-description {
+  margin: 5px 0;
+  color: #ccc;
+}
+.skills-section {
+  padding: 20px;
+}
+
+.skills-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Hide overflow to enable scrolling */
+  height: 200px; /* Fixed height for the scrolling container */
+  white-space: nowrap;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  animation: scroll 20s linear infinite; /* Animation for horizontal scrolling */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  white-space: normal; /* Allow text wrapping */
+}
+
+.skill-icon-box {
+  width: 100px; /* Fixed width */
+  height: 100px; /* Fixed height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1d1b35; /* Box background color */
+  border-radius: 10px; /* Box border radius */
+  margin-bottom: 10px;
+}
+
+.skill-image {
+  max-width: 80px; /* Maximum width of the icon */
+  max-height: 80px; /* Maximum height of the icon */
+  object-fit: contain;
+}
+.skill-name{
+  font-size: 1.2em;
+  font-family: "Inter",serif;
+  color:#b7aabf;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 0.5em 0;
+}
+
+a {
+  color: #fff; /* Set link color to white */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px; /* Add gap between flex items */
+}
+
+.flex-item {
+  flex: 1 1 45%; /* Flex basis adjusted for smaller screens */
+  padding: 10px;
+}
+
+.profile-image {
+  width: 350px;
+  height: auto;
+  max-height: 350px; /* Ensure the image height fits well within the section */
+  object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
+  margin-left: 40px; /* Add margin to the left of the image for horizontal space */
+  margin-top: 2.2cm;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  
+}
+
+.social-icons a {
+  color: #fff; /* Set social icon color to white */
+  font-size: 24px;
+}
+
+button {
+  background-color:rgb(48, 45, 74) ;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  font-family:"Quicksand", serif;
+  font-weight: bolder;
+  font-size: 1.1em;
+  border-radius: 45px;
+}
+button:hover{
+  background-color: #3263de;
+}
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project-item {
+  background-color: #20063f;
+  padding: 20px;
+  border-radius: 10px;
+  width: calc(50% - 20px); /* Two items per row */
+  box-sizing: border-box;
+  transition: box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+.project-item:hover {
+   box-shadow: 0 0 20px 5px rgba(50, 99, 222, 0.5); /* Add glow effect on hover */
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.project-item h3 {
+  font-family: "DM Serif Text", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2.3em;
+  color: rgb(220, 100, 120);
+  margin: 10px 0;
+}
+/* Style for the GitHub icon link */ .github-link {
+   display: inline-flex; 
+   align-items: center; 
+   color: #fff; 
+   text-decoration: none; 
+   font-size: 1.5em; 
+   margin-top: 10px;
+  }
+ .github-link i { 
+  margin-right: 8px; /* Space between icon and text */
+ }
+
+@media (max-width: 768px) {
+  .experience-content {
+    flex-direction: column;
+  }
+
+  .experience-boxes {
+    flex: 1;
+  }
+
+  .experience-image {
+    margin-bottom: 20px;
+  }
+
+  .flex-item {
+    flex: 1 1 100%; /* Stack items vertically on smaller screens */
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }}

@@ -41,7 +41,7 @@ const coder = {
         <div className="flex-item">
           <h2>About Me</h2>
           <p className="about-description">Hello, This is <strong className="highlight">Sreekar Reddy Pindi</strong></p>
-          <p className="about-description">Computer Science Student at Manipal Institute of Technology | Passionate about Computer Networking and Software Development | AI Enthusiast</p>
+          <p className="about-description">Computer Science Student at Manipal Institute of Technology || Frontend & Backend Development || Python & ML Enthusiast || Building AI for Social Impact</p>
 
           <div className="social-icons">
             <a href="https://github.com/Sreekarreddy2005" target="_blank" rel="noopener noreferrer">
@@ -54,7 +54,7 @@ const coder = {
               <i className="fas fa-envelope"></i>
             </a>
           </div>
-          <a className="button1"href="/resume.pdf" target="_blank">
+          <a className="button1"href="/Sreekar_Resume.pdf" target="_blank">
             <button>Resume</button>
           </a>
         </div>

@@ -1,5 +1,14 @@
 # Portflio-Website
-Developed a responsive and visually engaging portfolio website to showcase my professional journey, skills, and accomplishments. The site includes sections for About Me, Education, Experience, Skills, and Projects, with a dynamic gallery of project photos and a downloadable resume. Utilized HTML, CSS, and JavaScript to build an intuitive user interface and ensure cross-device compatibility. Deployed the project using GitHub and Netlify for seamless integration and fast loading times.
+• Designed and developed a highly responsive, visually appealing portfolio website to showcase credentials,
+projects, and professional achievements.
+• Structured the site with distinct sections for About Me, Education, Experience, Skills, Projects, and Contact Me
+enhancing navigation and user engagement.
+• Integrated a dynamic gallery to highlight project work with interactive visuals and enabled downloadable
+resume access for recruiters.
+• Utilized HTML, CSS, and JavaScript to create an intuitive, cross-device compatible interface focused on
+performance and seamless usability.
+• Deployed the website through GitHub and Netlify, ensuring continuous integration, efficient updates, and fast,
+reliable loading times.
 
 # How To Run:-
 1) Clone the repository or download the zip file

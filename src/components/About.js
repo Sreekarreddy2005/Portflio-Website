@@ -1,6 +1,43 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 const About = () => {
+  const [role, setRole] = useState('');
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [loopNum, setLoopNum] = useState(0);
+  const [typingSpeed, setTypingSpeed] = useState(150);
+
+  const roles = [
+    'Frontend Developer',
+    'Backend Developer',
+    'Full-Stack Developer',
+    'AI/ML Engineer'
+  ];
+
+  useEffect(() => {
+    const handleTyping = () => {
+      const i = loopNum % roles.length;
+      const fullText = roles[i];
+
+      setRole(
+        isDeleting
+          ? fullText.substring(0, role.length - 1)
+          : fullText.substring(0, role.length + 1)
+      );
+
+      setTypingSpeed(isDeleting ? 75 : 150);
+
+      if (!isDeleting && role === fullText) {
+        setTimeout(() => setIsDeleting(true), 1500);
+      } else if (isDeleting && role === '') {
+        setIsDeleting(false);
+        setLoopNum(loopNum + 1);
+      }
+    };
+
+    const ticker = setTimeout(handleTyping, typingSpeed);
+    return () => clearTimeout(ticker);
+  }, [role, isDeleting, loopNum, typingSpeed, roles]);
+
   const coderString = `
 const coder = {
   name: 'Sreekar Reddy Pindi',
@@ -19,14 +56,14 @@ const coder = {
 `;
 
   const coloredText = coderString.split(/(\s+|,|\(|\)|\{|\}|\[|\])/).map((word, index) => {
-    let color = '#fff'; // default color
+    let color = '#fff';
 
     if (word === 'const') color = '#EC4899';
     if (['Sreekar', 'Reddy', 'Pindi'].includes(word)) color = '#FCD34D';
-    if (['C', 'Java', 'Python', 'React', 'Node.js', 'SQL', 'Cybersecurity'].includes(word.replace(/[^a-zA-Z.]/g, ''))) color = '#FCD34D'; // Remove special characters for comparison
-    if (word === 'true') color = '#FFA500'; // Orange color for 'true'
-    if (word === 'function') color = '#FFA500'; // Orange color for 'function'
-    if (word === 'return') color = '#FFA500'; // Orange color for 'return'
+    if (['C', 'Java', 'Python', 'React', 'Node.js', 'SQL', 'Cybersecurity'].includes(word.replace(/[^a-zA-Z.]/g, ''))) color = '#FCD34D';
+    if (word === 'true') color = '#FFA500';
+    if (word === 'function') color = '#FFA500';
+    if (word === 'return') color = '#FFA500';
 
     return (
       <span key={index} style={{ color }}>
@@ -40,8 +77,13 @@ const coder = {
       <div className="flex-container">
         <div className="flex-item">
           <h2>About Me</h2>
-          <p className="about-description">Hello, This is <strong className="highlight">Sreekar Reddy Pindi</strong></p>
-          <p className="about-description">Computer Science Student at Manipal Institute of Technology || Frontend & Backend Development || Python & ML Enthusiast || Building AI for Social Impact</p>
+          <p className="about-description">
+            Hello, I am <strong className="highlight">{role}</strong>
+            <span className="cursor blink">|</span>
+          </p>
+          <p className="about-description">
+            Computer Science Student at Manipal Institute of Technology || Full-Stack Development || Python & ML Enthusiast || Building AI for Social Impact
+          </p>
 
           <div className="social-icons">
             <a href="https://github.com/Sreekarreddy2005" target="_blank" rel="noopener noreferrer">
@@ -54,7 +96,7 @@ const coder = {
               <i className="fas fa-envelope"></i>
             </a>
           </div>
-          <a className="button1"href="/Sreekar_Resume.pdf" target="_blank">
+          <a className="button1" href="/Sreekar_Resume.pdf" target="_blank">
             <button>Resume</button>
           </a>
         </div>
@@ -67,7 +109,7 @@ const coder = {
       <div className="flex-container">
         <div className="flex-item" style={{ marginRight: "20px" }}>
           <h5>Who I Am?</h5>
-          <p className="other-description1">My name is Sreekar Reddy Pindi, a highly motivated and results-oriented B.Tech student with a strong and in-depth understanding of Java and C programming. I am passionate about software development, particularly in the domain of full-stack development and Artificial Intelligence. I possess excellent problem-solving and analytical skills, coupled with a strong work ethic and a keen desire to learn and grow within the dynamic field of software engineering. I am actively seeking challenging opportunities to apply my theoretical knowledge and contribute to innovative projects.</p>
+          <p className="other-description1">I am Sreekar Reddy Pindi, a software developer passionate about bringing ideas to life through code. Currently pursuing my B.Tech in Computer Science & AI, I thrive in the full-stack process—building seamless end-to-end applications using C, Java, and Python. My journey has evolved from traditional software development to the forefront of Artificial Intelligence, where I actively link deep learning models with strong engineering practices. Whether I am deploying intricate algorithms using TensorFlow or securing networks against vulnerabilities, I am dedicated to writing scalable code and tackling tricky problems with innovation.</p>
         </div>
         <div className="flex-item">
           <img src="/Sreekar pc.jpg" alt="Sreekar Reddy Pindi" className="profile-image" />

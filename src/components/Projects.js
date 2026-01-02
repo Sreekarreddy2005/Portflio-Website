@@ -2,18 +2,30 @@ import React from 'react';
 
 const projects = [
   {
-    title: "Analog To Digital Voice Decoder",
+    title: "Skill Mapper: Full-Stack AI Talent Acquisition Platform",
     description: (
       <div>
-        <p>This A/D voice decoder project pushes the boundaries of audio signal processing by not only translating spoken words into text but also seamlessly converting raw analog signals into their digital equivalents. I meticulously implemented advanced noise reduction and echo cancellation algorithms, resulting in a significant improvement in signal-to-noise ratio (SNR) by an average of 15dB compared to unprocessed signals.</p>
-        <p>Furthermore, I explored both uniform and non-uniform quantization techniques, achieving a bitrate reduction of 32% while maintaining high audio fidelity. This project serves as a testament to my ability to design and implement sophisticated signal processing pipelines that effectively handle real-world audio challenges.</p>
-        <p>Technologies Required: Python programming, Digital signal processing, Audio engineering, NumPy, SciPy, LibROSA</p>
+        <p>Skill Mapper is a scalable, full-stack platform designed to eliminate inefficiencies in manual resume screening by automating the extraction of structured data from unstructured formats like PDFs and DOCX. Built on an asynchronous architecture using React and FastAPI, the system supports over 500 concurrent users while delivering real-time analytics.</p>
+        <p>The core of the application is a custom NLP pipeline engineered with spaCy and BERT, which achieved 95% extraction accuracy and an 0.81 F1-Score. By integrating a weighted scoring engine and a hybrid recommender system using the YouTube API, the platform improved candidate-job matching precision by 30% and successfully generates personalized learning roadmaps for users.</p>
+        <p>Technologies Required: Python, Machine Learning, LLM, React.js, FastAPI, spaCy NLP, BERT, PyMuPDF, YouTube API</p>
       </div>
     ),
-    imageUrl: "/ProjectPics/project pic 1.jpg",
-    githubLink: "https://github.com/Sreekarreddy2005/Analog-To-Digital-VoiceDecoder"
+    imageUrl: "/ProjectPics/aiskill.png",
+    githubLink: "https://github.com/Sreekarreddy2005/AI-SKILL-MAPPER"
   },
   {
+    title: "AI-Powered Histopathologic Cancer Detection",
+    description: (
+      <div>
+        <p>This project addresses the complex challenge of automating metastasis detection within a dataset of over 220,000 histopathologic images. The solution utilizes a Convolutional Neural Network (CNN) built on MobileNetV2 transfer learning, optimized with advanced data augmentation and a ReduceLROnPlateau scheduler to reduce validation loss by 18%.</p>
+        <p>The model achieved exceptional performance metrics, including 96.3% validation accuracy and a 0.97 AUC score. To make the tool accessible for practical diagnostics, the model was deployed via a full-stack Streamlit web application, allowing for real-time image upload and immediate, confidence-scored predictions</p>
+        <p>Technologies Used: Python, TensorFlow, Keras, Scikit-learn, Streamlit, Pandas, NumPy, Git</p>
+      </div>
+    ),
+    imageUrl: "/ProjectPics/aicancer.jpg",
+    githubLink: "https://github.com/Sreekarreddy2005/Cancer-Detection-App"
+  },
+{
     title: "ZipZap - File Sharing Website",
     description: (
       <div>
@@ -22,20 +34,21 @@ const projects = [
         <p>Technologies Used: Flask, Python, WebSocket, HTML, CSS, JavaScript, Databases</p>
       </div>
     ),
-    imageUrl: "/ProjectPics/project pic 2 new.jpg",
+    imageUrl: "/ProjectPics/project pic 2 latest.png",
     githubLink: "https://github.com/Sreekarreddy2005/P2P-FileSharing-Web"
   },
   {
-    title: "Weather Website",
+    title: "Cryptofolio",
     description: (
       <div>
-        <p>Unleash the power of real-time weather information at your fingertips with my interactive web application! This website empowers you to explore your city and instantly retrieve up-to-date weather conditions.</p>
-        <p>Built with the user in mind, it leverages HTML, CSS, and JavaScript to deliver a seamless browsing experience. By integrating a powerful weather API, this application provides you with the most recent weather data, keeping you informed and prepared for anything nature throws your way</p>
-        <p>Technologies Used: HTML, CSS, JavaScript</p>
+        <p>Real-time price and marketcap tracking for a wide range of cryptocurrencies.</p>
+        <p>Interactive graphs displaying historical price and marketcap data up to a year</p>
+        <p>Advanced search and filter functionality to easily find specific coins</p>
+        <p>Technologies Used: React.Js, CSS, JavaScript, API Devolopment</p>
       </div>
     ),
-    imageUrl: "/ProjectPics/project pic 3 new.jpg",
-    githubLink: "https://github.com/Sreekarreddy2005/WeatherApp"
+    imageUrl: "/ProjectPics/project pic 4.png",
+    githubLink: "https://github.com/Sreekarreddy2005/CryptoFolio"
   }
 ];
 
